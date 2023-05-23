@@ -1,0 +1,31 @@
+@use "./components/navbar";
+@use "./sections/landingPage";
+// @use "./sections/team";
+@use "./variables" as *;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section {
+    background-color: #fffff0;
+    display: none;
+}
+
+.activeSection {
+    font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: $primary;
+  margin: 2.5rem 0;
+}

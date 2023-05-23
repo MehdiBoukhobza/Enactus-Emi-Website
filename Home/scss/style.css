@@ -1,0 +1,508 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  color: white;
+  width: 100%;
+  height: 45px;
+  background: url("images\\Logos\\ENACTUS_logo.png");
+  background-color: #B67929;
+  background-position: center;
+  background-size: 50%;
+  background-blend-mode: color-burn;
+}
+.navbar .navbar-btn-image::before {
+  display: none;
+}
+.navbar .navbar-logo {
+  width: 60%;
+}
+.navbar .navbar-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.navbar .navbar-btns .navbar-btn {
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  width: 180px;
+}
+
+#home:hover,
+#about:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#associationDP:hover,
+#connection {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 10px;
+  background: #FFC000;
+  transition: all 0.5s ease;
+  width: 0;
+}
+
+.navbar-btn:hover::before,
+#connection::before {
+  width: 3%;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #1a202c;
+  background-blend-mode: color-burn;
+}
+.img-container .black-cover {
+  background-color: #1a202c;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97vh;
+}
+
+.info-section {
+  position: absolute;
+  top: 85vh;
+  display: block;
+  width: 90%;
+}
+.info-section .card {
+  border-radius: 5px;
+  font-weight: 500;
+}
+.info-section .card .card-text {
+  font-size: 1.2rem;
+}
+.info-section .card .title-line {
+  width: 80%;
+  height: 3px;
+  margin: 1rem auto;
+  background-color: #1a202c;
+}
+.info-section .entreprenarial {
+  background-color: #FFC000;
+  color: white;
+}
+.info-section .action {
+  background-color: #f7fafc;
+}
+.info-section .forUsAll {
+  background-color: #4a5568;
+  color: white;
+}
+.info-section .about-container {
+  display: flex;
+  grid-gap: 26px;
+}
+.info-section .about-container .myCard {
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+.info-section .about-container .myCard .about-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.info-section .about-container .myCard .about-header .about-title {
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #1a202c;
+  text-align: center;
+  margin: 0.6rem auto;
+}
+.info-section .about-container .myCard .about-header .enactus-logo {
+  width: 80%;
+}
+.info-section .about-container .myCard .description-emi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.info-section .about-container .myCard .description-emi .emi-title {
+  width: 90%;
+  color: #2d3748;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.info-section .about-container .myCard .description-emi .description-body {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin: 2rem;
+}
+.info-section .about-container .myCard .description-emi .description-body img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description {
+  position: relative;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description .learn-more-btn {
+  display: block;
+  background-color: #FFC000;
+  position: absolute;
+  right: 35%;
+  margin-top: 0.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.info-section .about-container .myCard .description-emi .description-body .emi-description .learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-enactus-emi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.info-section .about-container .myCard .description-enactus-emi .emi-title {
+  width: 90%;
+  color: #2d3748;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  margin: 2rem;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description {
+  position: relative;
+  margin: 0 1rem 2rem 0;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description .learn-more-btn {
+  display: block;
+  background-color: #FFC000;
+  position: absolute;
+  right: 35%;
+  margin-top: 0.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.info-section .about-container .myCard .description-enactus-emi .description-body .emi-description .learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .about-container .accordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-section .projects-container {
+  position: relative;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 3rem auto;
+  justify-content: center;
+  align-items: center;
+}
+.info-section .projects-container .card {
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #cbd5e0;
+}
+.info-section .projects-container .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.info-section .projects-container .card a {
+  background-color: #FFC000;
+  border: none;
+  font-weight: 600;
+}
+.info-section .projects-container .card-text {
+  font-size: 1rem;
+}
+.info-section .page-break-img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  transform: scale(1.2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.info-section .golden-cover {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #FFC000;
+  opacity: 0.8;
+  z-index: 10;
+}
+.info-section .events-section {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 0;
+  margin-top: 3%;
+  border: 1px solid #e2e8f0;
+}
+.info-section .events-section .events-header {
+  width: 100%;
+  height: 40px;
+  background-color: #cbd5e0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.info-section .events-section .events-header .h-shape {
+  background-color: #FFC000;
+  width: 700px;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+}
+.info-section .events-section .events-header .h-shape .h-text {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.info-section .events-section .h-triangle {
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: #FFC000;
+  width: 4%;
+  height: 25px;
+  margin-top: -21px;
+}
+.info-section .events-section .events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 540px;
+  transition: all 0.5s ease-in-out;
+}
+.info-section .events-section .events .event {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  background-color: #edf2f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.info-section .events-section .events .event .event-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-section .events-section .events .event .event-h {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.info-section .events-section .events .event .event-h .event-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC000;
+  width: 90px;
+  height: 100px;
+  border-radius: 13px 0 13px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.info-section .events-section .events .event .event-h .event-date span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.info-section .events-section .events .event .event-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  height: 100%;
+  padding: 10px;
+}
+.info-section .events-section .events .event .event-body .event-title {
+  font-size: 1.5rem;
+  color: #FFC000;
+  font-weight: bold;
+}
+.info-section .events-section .events .event .event-body .event-txt {
+  font-size: 1.2rem;
+  color: #1a202c;
+}
+.info-section .events-section .events .event:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.4);
+}
+.info-section .sponsors-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  margin-top: 3%;
+  padding: 20px;
+}
+.info-section .sponsors-container .sponsor {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.info-section .sponsors-container .sponsor:hover {
+  transform: scale(1.04);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.info-section .sponsors-container .gold {
+  border-top: 10px solid #FFC000;
+}
+.info-section .sponsors-container .silver {
+  border-top: 10px solid #a0aec0;
+}
+.info-section .sponsors-container .bronze {
+  border-top: 10px solid #cd7f32;
+}
+.info-section .footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  margin: 0;
+  padding: 40px;
+  width: 140%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #cd7f32, #a25636, #6f3730, #3a1e21, #000000);
+  color: #F5F5F5;
+  border: 1px solid #e2e8f0;
+  margin-top: 3%;
+  transform: translateX(-5rem);
+}
+.info-section .footer-about-us-text {
+  text-align: justify;
+  padding-right: 14rem;
+  padding-top: 1rem;
+}
+.info-section .footer-about-us-text:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 45px;
+  line-height: 60px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-left: 3px;
+}
+
+.event-text {
+  text-align: justify;
+  color: #848482;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.section {
+  background-color: #fffff0;
+  display: none;
+}
+
+.activeSection {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #FFC000;
+  margin: 2.5rem 0;
+}/*# sourceMappingURL=style.css.map */

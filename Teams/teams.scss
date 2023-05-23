@@ -1,0 +1,222 @@
+$primary-color: #00243f;
+$secondary-color: #FFC000;
+$tertiary-color: #3c5b74;
+$quaternary-color: #a3acb1;
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+$enable-negative-margins: true;
+
+
+.navbar {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  color: white;
+  width: 100%;
+  height: 45px;
+  background: url("Pictures\\navbar_bg.jpg");
+  background-color: #B67929;
+  background-position: center;
+  background-size: 50%;
+  background-blend-mode: color-burn;
+
+  .navbar-btn-image::before {
+    display: none;
+  }
+  
+  .navbar-logo {
+    width: 60%;
+  }
+
+  .navbar-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .navbar-btn {
+      font-family: "Ubuntu", sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      font-size: 17px;
+      cursor: pointer;
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+      width: 180px;
+    }
+  }
+}
+
+#home:hover,
+#about:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#associationDP:hover,
+#connection {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 10px;
+  background: #FFC000;
+  transition: all 0.5s ease;
+  width: 0;
+}
+.navbar-btn:hover::before,
+#connection::before {
+  width: 3%;
+}
+
+
+/// Part 4 Start
+
+
+.test:hover{
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.4s;
+}
+
+.test {
+  transform: translateY(5px);
+  transition: all ease-in-out 0.4s;
+}
+
+.line1 {
+  border-bottom: 3px solid #903;
+  width: 120px;
+  margin: auto;
+}
+
+.line2 {
+  width: 900px;
+}
+
+
+
+
+
+.main_AIB {
+  text-align: justify;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+.main_AIB:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 30px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.title_AIB {
+  font-size: 25px;
+  font-family: "Barlow", sans-serif;
+  color: $quaternary-color;
+  text-align: center;
+}
+
+.assurance_text {
+  width: 500px;
+}
+
+.assurance_title {
+  color: $secondary-color;
+  font-size: 55px;
+  text-align: center;
+}
+
+.frais_all {
+  margin-top: 4rem;
+}
+
+.forth_p {
+  background-image: url("Pictures\\random lines.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  // background-blend-mode: color-burn;
+  // background-position-y: -6rem;
+}
+
+
+
+//Part 4 End
+
+
+//Footer
+
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  margin: 0;
+  padding: 40px;
+  width: 140%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #cd7f32, #a25636, #6f3730, #3a1e21, #000000);
+  color: #F5F5F5;
+  border: 1px solid #e2e8f0;
+  margin-top: 3%;
+  // transform: translateX(-5rem);
+}
+
+.footer-about-us-text {
+  text-align: justify;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-about-us-text:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 45px;
+  line-height: 60px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-left: 3px;
+}
+
+.left, .right {
+  margin-left: 13rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

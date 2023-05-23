@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body style="font-family: 'Ubuntu', sans-serif">
+
+    <nav id="myNavBar" class="navbar sticky-top">
+      <div class="navbar-btns d-flex justify-content-center">
+        <a
+          href="https://enactus.org/"
+          class="navbar-btn ps-4 navbar-btn-image"
+        >
+          <img
+            src="./Pictures/ENACTUS_logo.png"
+            alt="Enactus-logo"
+            class="navbar-logo"
+          />
+        </a>
+        <a href="/Home/index.html" class="navbar-btn ps-4" id="home" data-id="home">HOME</a>
+        <a href="/Teams/teams.html" class="navbar-btn ps-4" id="team" data-id="about">TEAM</a>
+        <a href="/Palmares Enactus/Palmares.html" class="navbar-btn ps-4" id="admission">PALMARES</a>
+        <a href="/Projects/index.html" class="navbar-btn ps-4" id="admission">PROJETS</a>
+        <a href="/Actualites/news.html" class="navbar-btn ps-4" id="examens" data-id="exams">ACTUALITES</a>
+        <a href="/Contact/contact.html" class="navbar-btn ps-4" id="contact" data-id="contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <div class="BG position-relative">
+      <div class="position-absolute top-0 start-50 translate-middle-x all">
+          <div
+            class="container form_all d-flex justify-content-center align-items-center"
+          >
+            <div class="get rounded-4 position-relative">
+              <div class="entrer_all position-absolute top-50 start-0 translate-middle-y ms-n1">
+                <div class="get_text fs-2">Entrer En Contact</div>
+                <div class="container form_entrer pt-3 ms-3">
+                  <div class="row pb-2">
+                    <div class="col-6">
+                      <input
+                        class="new nom rounded-3"
+                        type="text"
+                        placeholder="Nom"
+                        id="username"
+                      />
+                    </div>
+                    <div class="col-6">
+                      <input
+                        class="new prenom rounded-3 ms-n3"
+                        type="email"
+                        placeholder="Email"
+                        id="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pb-2">
+                    <div class="col-6">
+                      <input
+                        class="new sujet rounded-3"
+                        type="text"
+                        placeholder="Sujet"
+                        id="sujet"
+                      />
+                    </div>
+                  </div>
+                  <div class="row pb-2">
+                    <div class="col-12">
+                      <textarea
+                        id="message"
+                        class="new message rounded-3 pt-2"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="button_send rounded-3 mt-2 p-1 shadow-lg"
+                  data-bs-toggle="modal"
+                >
+                  Envoyer le message
+                </button>
+              </div>
+            </div>
+            <div class="contact rounded-4 position-relative">
+              <div class=" position-absolute top-50 start-50 translate-middle mt-n5">
+                <div class="contact_title fs-2">Contactez Nous</div>
+                <div class="d-flex flex-row mt-5 justify-content-center gap-2">
+                  <div class="d-flex flex-column justify-content-evenly gap-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="#fdfcfa"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="#fdfcfa"
+                      class="bi bi-envelope-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="#fdfcfa"
+                      class="bi bi-telephone-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="#fdfcfa"
+                      class="bi bi-browser-chrome"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="d-flex flex-column justify-content-evenly gap-5 align-items-end"
+                  >
+                    <a href="" class="text_contact fs-6 ms-4"
+                      >Avenue Ibn Sina, Rabat</a
+                    >
+                    <a href="" class="text_contact fs-6 ms-4"
+                      > enactus@emi.ac.ma</a
+                    >
+                    <a href="" class="text_contact fs-6 ms-5">(+212) 537 68 71 50</a>
+                    <a href="" class="text_contact fs-6 ms-4">www.enactusemi.ma</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid footer position-relative mt-0">
+      <div class="left">
+        <h1 class="footer-title fw-bold text-decoration-underline">About us</h1>
+        <p class="footer-about-us-text">
+          <strong>Enactus</strong>, anciennement connue sous le nom de SIFE, est une
+          organisation non-gouvernementale créée en 1975 aux États-Unis
+          pour développer les compétences entrepreneuriales des étudiants
+          et résoudre des problèmes sociaux. Depuis son lancement au Maroc
+          en 2003, Enactus EMI a renforcé l'esprit entrepreneurial des
+          étudiants de l'École Mohammadia d'Ingénieurs de Rabat et a
+          remporté de nombreux titres nationaux et internationaux grâce à
+          la persévérance, l'implication et la motivation de ses membres.
+        </p>
+      </div>
+
+      <div class="right">
+        <h1 class="footer-title fw-bold text-decoration-underline">Contact Us</h1>
+        <br />
+        <i class="fas fa-light fa-location-dot contact-icon"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#fdfcfa"
+          class="bi bi-geo-alt-fill me-3"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+          />
+        </svg>
+        <p class="card-text" style="display: inline">
+          Avenue Ibn Sina, Rabat
+        </p>
+        <br /><br />
+        <i class="fas fa-light fa-phone contact-icon"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#fdfcfa"
+          class="bi bi-envelope-fill me-3"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+          />
+        </svg>
+        <p class="card-text" style="display: inline">enactus@emi.ac.ma</p>
+        <br /><br />
+        <i class="fas fa-light fa-envelope contact-icon"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="#fdfcfa"
+          class="bi bi-telephone-fill me-3"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+          />
+        </svg>
+        <p class="card-text" style="display: inline">
+          (+212) 537 68 71 50
+        </p>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="contact.js" type="module"></script>
+  </body>
+</html>
