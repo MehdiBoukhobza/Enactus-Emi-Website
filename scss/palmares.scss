@@ -1,6 +1,6 @@
-html{
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: url("Another one\\background part_1.jpg");
@@ -10,7 +10,6 @@ body {
   background-size: 100%;
   overflow-x: hidden;
 }
-
 
 .navbar {
   font-family: "ubuntu", "roboto", sans-serif;
@@ -25,7 +24,7 @@ body {
   width: 100%;
   height: 45px;
   background: url("Another one\\navbar_bg.jpg");
-  background-color: #B67929;
+  background-color: #b67929;
   background-position: center;
   background-size: 50%;
   background-blend-mode: color-burn;
@@ -33,7 +32,7 @@ body {
   .navbar-btn-image::before {
     display: none;
   }
-  
+
   .navbar-logo {
     width: 60%;
   }
@@ -78,7 +77,7 @@ body {
   position: absolute;
   height: 3px;
   bottom: 10px;
-  background: #FFC000;
+  background: #ffc000;
   transition: all 0.5s ease;
   width: 0;
 }
@@ -86,17 +85,6 @@ body {
 #connection::before {
   width: 3%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .line1 {
   border-bottom: 3px solid rgb(0, 0, 0);
@@ -180,11 +168,6 @@ body {
   transform: rotate(90deg);
 }
 
-
-
-
-
-
 .dot_r {
   position: absolute;
   height: 28px;
@@ -208,18 +191,16 @@ body {
   color: #d9d9d9;
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
-
-
 
 .time_title_r {
   font-family: "Ubuntu", sans-serif;
@@ -232,7 +213,7 @@ body {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-weight: 640;
   font-size: 30px;
-  color: #FBFCD4;
+  color: #fbfcd4;
 }
 
 .time_year_r {
@@ -241,7 +222,7 @@ body {
   font-weight: 600;
   margin-left: -28rem;
   margin-top: -1rem;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: #fbc403;
 }
 
@@ -252,17 +233,12 @@ body {
   margin-left: -27rem;
   font-size: 20px;
   margin-top: 8rem;
-  font-style: italic
+  font-style: italic;
 }
 
-
-
-
-.y2019{
+.y2019 {
   margin-top: 27rem;
 }
-
-
 
 .dot_l {
   position: absolute;
@@ -297,7 +273,7 @@ body {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-weight: 640;
   font-size: 30px;
-  color: #FBFCD4;
+  color: #fbfcd4;
 }
 
 .time_year_l {
@@ -306,7 +282,7 @@ body {
   font-weight: 600;
   margin-left: 48.5rem;
   margin-top: 10rem;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: #fbc403;
 }
 
@@ -322,23 +298,21 @@ body {
   white-space: nowrap;
 }
 
-#dot_adapt{
-  margin-top: 18rem ;
+#dot_adapt {
+  margin-top: 18rem;
 }
-#year_adapt{
+#year_adapt {
   margin-top: 8rem;
 }
-#place_adapt{
+#place_adapt {
   margin-top: 17rem;
 }
 
-
-.y2018{
+.y2018 {
   margin-top: 45rem;
 }
 
-
-.y2013{
+.y2013 {
   margin-top: 45rem;
 }
 
@@ -352,9 +326,7 @@ body {
   z-index: 99;
 }
 
-
 //Footer
-
 
 .footer {
   font-family: "Ubuntu", sans-serif;
@@ -365,8 +337,15 @@ body {
   padding: 40px;
   width: 140%;
   height: 100%;
-  background-image: linear-gradient(to right bottom, #cd7f32, #a25636, #6f3730, #3a1e21, #000000);
-  color: #F5F5F5;
+  background-image: linear-gradient(
+    to right bottom,
+    #cd7f32,
+    #a25636,
+    #6f3730,
+    #3a1e21,
+    #000000
+  );
+  color: #f5f5f5;
   border: 1px solid #e2e8f0;
   margin-top: 3%;
   // transform: translateX(-5rem);
@@ -389,11 +368,9 @@ body {
   padding-left: 3px;
 }
 
-.left, .right {
+.left,
+.right {
   margin-left: 13rem;
 }
-
-
-
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
