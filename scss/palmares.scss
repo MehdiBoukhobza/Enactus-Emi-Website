@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+  background-image: url("Another one\\background part_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  color: white;
+  width: 100%;
+  height: 45px;
+  background: url("Another one\\navbar_bg.jpg");
+  background-color: #B67929;
+  background-position: center;
+  background-size: 50%;
+  background-blend-mode: color-burn;
+
+  .navbar-btn-image::before {
+    display: none;
+  }
+  
+  .navbar-logo {
+    width: 60%;
+  }
+
+  .navbar-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .navbar-btn {
+      font-family: "Ubuntu", sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      font-size: 17px;
+      cursor: pointer;
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+      width: 180px;
+    }
+  }
+}
+
+#home:hover,
+#about:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#associationDP:hover,
+#connection {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 10px;
+  background: #FFC000;
+  transition: all 0.5s ease;
+  width: 0;
+}
+.navbar-btn:hover::before,
+#connection::before {
+  width: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.line1 {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  width: 170px;
+  margin: auto;
+}
+
+.mission {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  text-align: center;
+  color: #bebebe;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: -0.5rem;
+}
+
+.palmares {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  text-align: center;
+  color: #fbc403;
+}
+
+.title_palm {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin-left: 4.8rem;
+}
+
+.part_1_text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  text-align: justify;
+  padding-left: 7rem;
+}
+
+.part_1_text::first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.part_1 {
+  display: flex;
+  align-items: center;
+}
+
+.part_1_pic {
+  width: 600px;
+  height: 290px;
+}
+
+.part_2 {
+  background-image: url("Another one\\69d07148c9231877b97453a1ded7b275.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  background-blend-mode: multiply;
+}
+
+.line_timelin {
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  width: 3000px;
+  margin-top: 4rem;
+}
+
+.line_timeline {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 2000px;
+  margin-top: 62.28rem;
+  margin-left: -15rem;
+  transform: rotate(90deg);
+}
+
+
+
+
+
+
+.dot_r {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-color: #fbc403;
+  border-radius: 50%;
+  margin-left: -6.4rem;
+  margin-top: 9rem;
+  z-index: 1;
+}
+
+.text_time_r {
+  text-align: justify;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  width: 800px;
+  height: 800px;
+  margin-left: 40rem;
+  padding-left: 13rem;
+  margin-top: -45rem;
+  color: #d9d9d9;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.time_title_r {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fbc403;
+}
+
+.name_r {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: 640;
+  font-size: 30px;
+  color: #FBFCD4;
+}
+
+.time_year_r {
+  position: absolute;
+  font-size: 130px;
+  font-weight: 600;
+  margin-left: -28rem;
+  margin-top: -1rem;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fbc403;
+}
+
+.time_place_r {
+  position: absolute;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: #ffdd03;
+  margin-left: -27rem;
+  font-size: 20px;
+  margin-top: 8rem;
+  font-style: italic
+}
+
+
+
+
+.y2019{
+  margin-top: 27rem;
+}
+
+
+
+.dot_l {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-color: #fbc403;
+  border-radius: 50%;
+  margin-left: 41.6rem;
+  margin-top: 20rem;
+}
+
+.text_time_l {
+  text-align: justify;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  width: 800px;
+  height: 800px;
+  margin-left: -5rem;
+  padding-left: 10rem;
+  margin-top: -45rem;
+  color: #d9d9d9;
+}
+
+.time_title_l {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fbc403;
+}
+
+.name_l {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: 640;
+  font-size: 30px;
+  color: #FBFCD4;
+}
+
+.time_year_l {
+  position: absolute;
+  font-size: 130px;
+  font-weight: 600;
+  margin-left: 48.5rem;
+  margin-top: 10rem;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fbc403;
+}
+
+.time_place_l {
+  text-align: unset;
+  position: absolute;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: #ffdd03;
+  margin-left: 50rem;
+  font-size: 20px;
+  margin-top: 19rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+#dot_adapt{
+  margin-top: 18rem ;
+}
+#year_adapt{
+  margin-top: 8rem;
+}
+#place_adapt{
+  margin-top: 17rem;
+}
+
+
+.y2018{
+  margin-top: 45rem;
+}
+
+
+.y2013{
+  margin-top: 45rem;
+}
+
+.hope_line {
+  position: absolute;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  width: 1200px;
+  margin-top: -37.6rem;
+  margin-left: 10rem;
+  transform: rotate(90deg);
+  z-index: 99;
+}
+
+
+//Footer
+
+
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  margin: 0;
+  padding: 40px;
+  width: 140%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #cd7f32, #a25636, #6f3730, #3a1e21, #000000);
+  color: #F5F5F5;
+  border: 1px solid #e2e8f0;
+  margin-top: 3%;
+  // transform: translateX(-5rem);
+}
+
+.footer-about-us-text {
+  text-align: justify;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-about-us-text:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 45px;
+  line-height: 60px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-left: 3px;
+}
+
+.left, .right {
+  margin-left: 13rem;
+}
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

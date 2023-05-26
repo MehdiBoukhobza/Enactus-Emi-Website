@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("Another one\\ghjj.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  font-family: "ubuntu", "roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  color: white;
+  width: 100%;
+  height: 45px;
+  background: url("Another one\\navbar_bg.jpg");
+  background-color: #b67929;
+  background-position: center;
+  background-size: 50%;
+  background-blend-mode: color-burn;
+
+  .navbar-btn-image::before {
+    display: none;
+  }
+
+  .navbar-logo {
+    width: 60%;
+  }
+
+  .navbar-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .navbar-btn {
+      font-family: "Ubuntu", sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      font-size: 17px;
+      cursor: pointer;
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+      width: 180px;
+    }
+  }
+}
+
+#home:hover,
+#about:hover,
+#admission:hover,
+#examens:hover,
+#contact:hover,
+#associationDP:hover,
+#connection {
+  color: rgb(194, 194, 194);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-btn::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: 10px;
+  background: #ffc000;
+  transition: all 0.5s ease;
+  width: 0;
+}
+.navbar-btn:hover::before,
+#connection::before {
+  width: 3%;
+}
+
+.line1 {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  width: 190px;
+  margin: auto;
+}
+
+.actualite {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  text-align: center;
+  color: #fbc403;
+}
+
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: #fbc403 !important;
+}
+
+.card-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.text-muted {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: #bebebe !important;
+}
+
+.card {
+  transition: all ease-in-out 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(33, 33, 33, 0.4);
+}
+
+//Footer
+
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  margin: 0;
+  padding: 40px;
+  width: 140%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    #cd7f32,
+    #a25636,
+    #6f3730,
+    #3a1e21,
+    #000000
+  );
+  color: #f5f5f5;
+  border: 1px solid #e2e8f0;
+  margin-top: 3%;
+  // transform: translateX(-5rem);
+}
+
+.footer-about-us-text {
+  text-align: justify;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-about-us-text:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 45px;
+  line-height: 60px;
+  padding-top: 8px;
+  padding-right: 9px;
+  padding-left: 3px;
+}
+
+.left,
+.right {
+  margin-left: 13rem;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
