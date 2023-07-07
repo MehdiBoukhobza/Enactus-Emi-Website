@@ -34,7 +34,7 @@ To get started with the Enactus website, follow these steps:
 
 If you encounter any issues or have questions regarding the Enactus EMI, you can seek help through the following channels:
 
-- *Email: Contact the project maintainers by sending an email to *elmehdiboukhobza2002@gmail.com*  or *bokalihab@gmail.com*.
+- Email: Contact the project maintainers by sending an email to *elmehdiboukhobza2002@gmail.com*  or *bokalihab@gmail.com*.
 
 ## Who maintains and contributes to the project
 
